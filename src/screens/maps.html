@@ -1,0 +1,21 @@
+
+
+
+<p id = "showData"> </p>
+<script>
+const currentData = [
+{Name : "aman" , age:"23", Digree: "Bca" },
+{Name : "adhiti" , age:"16", Digree: "9th" },
+{Name : "abhi" , age:"23", Digree: "MBA" },
+{Name : "Mani" , age:"23", Digree: "12th" },
+]
+
+const data = currentData.map ((cvalue,index) => { 
+
+return `My name is ${cvalue.Name}. My age is ${cvalue.age}. My Digree is ${ cvalue.Digree}`;
+
+});
+console.log( data,index);
+
+document.getElementById('showData').innerHTML = data;
+</script>
